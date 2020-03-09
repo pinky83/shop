@@ -1,0 +1,26 @@
+<div>
+  <table>
+    <tr>
+      <th>
+        Name: {{product.name}}
+      </th>
+      <th>
+        Description: {{product.description}}
+      </th>
+      <th>
+        Price: {{product.price}}
+      </th>
+      <th>
+        Category: {{product.category}}
+      </th>
+      <th>
+        Shipping: {{product.shipping}}
+      </th>
+    </tr>
+    <tr>
+      <th>
+        <button (click)="onBuy($event)">Buy!</button>
+      </th>
+    </tr>
+  </table>
+</div>
