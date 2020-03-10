@@ -1,0 +1,8 @@
+<div>
+  <app-buyed-product
+   *ngFor="let buyedProductModel of cartService.getProducts()"
+   [buyedProduct] = "buyedProductModel"
+  >
+  <h2>{{cart.name}}</h2>
+  </app-buyed-product>
+</div>
