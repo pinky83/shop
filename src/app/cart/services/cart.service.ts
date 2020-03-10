@@ -12,17 +12,17 @@ export class CartService {
   constructor() {
     this.cart = new CartModel();
     this.cart.name = 'List of purchased products';
-    this.cart.buyedProducts = [new BuyedProductModel(0, '', '', 0, 0)];
+    this.cart.buyedProducts = [];
   }
 
   updateCart(product: ProductModel) {
     let  item = this.cart.buyedProducts.find(buyedProduct => buyedProduct.id === product.id);
     if (item != null) {
-      item.quantity += 1;
+      item.quantity++;
       item.totalPrice += product.price;
     } else {
-      item =  new BuyedProductModel(product.id, product.name, product.description, 0, 0);
-      this.cart.buyedProducts.concat(item);
+      item =  new BuyedProductModel(product.id, product.name, product.description, 1, product.price);
+      this.cart.buyedProducts.push(item);
     }
   }
 

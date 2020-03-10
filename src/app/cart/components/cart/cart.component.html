@@ -1,8 +1,18 @@
-<div>
-  <app-buyed-product
-   *ngFor="let buyedProductModel of cartService.getProducts()"
-   [buyedProduct] = "buyedProductModel"
-  >
-  <h2>{{cart.name}}</h2>
-  </app-buyed-product>
-</div>
+<div *ngIf="cartService.getProducts().length;then content else other_content"> </div>
+  <ng-template #content>
+    <div id="cart">
+      <h2>{{cart.name}}</h2>
+      <app-buyed-product
+        *ngFor="let buyedProductModel of cartService.getProducts()"
+        [buyedProduct] = "buyedProductModel"
+      >
+      </app-buyed-product>
+    </div>
+  </ng-template>
+  <ng-template #other_content>
+    <div id="empty_cart">
+      <h2>{{cart.name}}</h2>
+      <h1>Cart is empty</h1>
+    </div>
+  </ng-template>
+

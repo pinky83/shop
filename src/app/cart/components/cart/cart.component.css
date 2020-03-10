@@ -1,0 +1,12 @@
+#cart {
+  text-align: center;
+  color: green;
+  border: #24292e;
+  float: right;
+}
+#empty_cart {
+  text-align: center;
+  color: #333333;
+  border: #333333;
+  float: right;
+}
