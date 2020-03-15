@@ -17,5 +17,11 @@
   <li>small refactoring changes</li>
   <li>some css styles (very poor, looks terrible)</li>
 </ul> 
+<h2>Homework - 2</h2>
+
+<ul>
+<li>splitting into the modules</li>
+<li>adding of products moved into product-list component</li>
+</ul>
 
 
