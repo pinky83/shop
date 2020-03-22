@@ -1,17 +1,23 @@
-import {CartModel} from './cart.model';
+import { CartModel } from './cart.model';
 
 export class BuyedProductModel {
-  id: number;
-  name: string;
-  description: string;
-  quantity: number;
-  totalPrice: number;
+  // id: number;
+  // name: string;
+  // description: string;
+  // quantity: number;
+  // totalPrice: number;
 
-  constructor(id: number, name: string, description: string, quantity: number, totalPrice: number) {
-    this.id = id;
-    this.name = name;
-    this.description = description;
-    this.quantity = quantity;
-    this.totalPrice = totalPrice;
+  constructor(
+    public id: number,
+    public name: string,
+    public description: string,
+    public quantity: number,
+    public totalPrice: number
+  ) {
+    // this.id = id;
+    // this.name = name;
+    // this.description = description;
+    // this.quantity = quantity;
+    // this.totalPrice = totalPrice;
   }
 }
