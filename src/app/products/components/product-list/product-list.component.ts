@@ -15,7 +15,7 @@ export class ProductListComponent implements OnInit {
               public cartService: CartService) { }
 
   onBuy(event: Event) {
-    this.cartService.updateCart(event as any);
+    this.cartService.addItem(event as any);
     console.log('Product buying...complete!', event);
   }
 

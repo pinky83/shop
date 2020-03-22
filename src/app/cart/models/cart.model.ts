@@ -1,7 +1,7 @@
-import {BuyedProductModel} from './buyed-product.model';
+import {CartItemModel} from './cart-item.model';
 
 export class CartModel {
   id: number;
   name: string;
-  buyedProducts: BuyedProductModel[];
+  buyedProducts: CartItemModel[];
 }

@@ -1,6 +1,4 @@
-import {CartModel} from './cart.model';
-
-export class BuyedProductModel {
+export class CartItemModel {
   id: number;
   name: string;
   description: string;

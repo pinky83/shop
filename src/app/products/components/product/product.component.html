@@ -19,7 +19,17 @@
     </tr>
     <tr>
       <th>
-        <button (click)="receiveProduct()">Buy!</button>
+        <div *ngIf="product.isAvailable;then content else other_content"> </div>
+        <ng-template #content>
+          <div id="buy_button">
+            <button (click)="receiveProduct()">Buy!</button>
+          </div>
+        </ng-template>
+        <ng-template #other_content>
+          <div id="cannot_buy">
+            <p>unavailable!</p>
+          </div>
+        </ng-template>
       </th>
     </tr>
   </table>

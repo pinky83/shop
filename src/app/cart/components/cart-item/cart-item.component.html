@@ -1,0 +1,27 @@
+<div>
+  <table>
+    <tr>
+      <th>
+        Name: {{itemModel.name}}
+      </th>
+      <th>
+        Description: {{itemModel.description}}
+      </th>
+      <th>
+        Total price: {{itemModel.totalPrice}}
+      </th>
+      <th>
+        Quantity: {{itemModel.quantity}}
+      </th>
+      <th>
+        <button (click)="increaseQty()"> + </button>
+      </th>
+      <th>
+        <button (click)="decreaseQty()"> - </button>
+      </th>
+      <th>
+        <button (click)="remove()">Remove</button>
+      </th>
+    </tr>
+  </table>
+</div>

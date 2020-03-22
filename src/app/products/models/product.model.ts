@@ -7,4 +7,5 @@ export interface ProductModel {
   price: number;
   category: Category;
   shipping: string[];
+  isAvailable: boolean;
 }
