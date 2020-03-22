@@ -22,6 +22,9 @@
 <ul>
 <li>splitting into the modules</li>
 <li>adding of products moved into product-list component</li>
+<li>used DOM event (click), decorators into the product-component </li>
+<li>implemented increase / decrease quantity / remove from cart in cart service</li>
+<li>add template variable in AppComponent with @ViewChild</li>
 </ul>
 
 

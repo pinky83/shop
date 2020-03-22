@@ -57,7 +57,6 @@ export class CartService {
         break;
       }
     }
-    operation > 0 ? item.quantity += 1 : item.quantity -= 1;
     if (item.quantity > 0) {
       const price = this.productService.getProducts().find(prod => prod.id === item.id).price;
       operation > 0 ? item.totalPrice += price : item.totalPrice -= price;

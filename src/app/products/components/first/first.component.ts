@@ -18,7 +18,7 @@ export class FirstComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    this.name = 'First Component';
+    this.name = 'Food market';
     this.description = 'This is a first component of my project...';
     this.price = 7;
     this.category = Category.CLEANERS;

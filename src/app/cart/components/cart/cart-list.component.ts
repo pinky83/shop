@@ -16,7 +16,6 @@ export class CartListComponent implements OnInit {
 
   onQtyChanged(event: Event) {
     this.cartService.updateItem(event as any);
-    console.log('Product buying...complete!', event);
   }
 
   ngOnInit(): void {
