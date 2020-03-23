@@ -25,6 +25,8 @@
 <li>used DOM event (click), decorators into the product-component </li>
 <li>implemented increase / decrease quantity / remove from cart in cart service</li>
 <li>add template variable in AppComponent with @ViewChild</li>
+<li>add styling for selected cart item with directives, @HostBinding and @HostListener (CartSelectionDirective)</li>
+<li>registered directive in shared module</li>
 </ul>
 
 
