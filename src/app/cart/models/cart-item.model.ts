@@ -1,6 +1,6 @@
 import {CartModel} from './cart.model';
 
-export class BuyedProductModel {
+export class CartItemModel {
 
   constructor(
     public id: number,

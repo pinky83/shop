@@ -9,6 +9,6 @@ export class FoodModel implements ProductModel {
     public name: string,
     public price: number,
     public shipping: string[],
-      public isAvailable: boolean;
+    public isAvailable: boolean
   ) {}
 }
