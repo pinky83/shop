@@ -4,7 +4,8 @@
       <h2>{{cart.name}}</h2>
       <app-buyed-product
         *ngFor="let buyedProductModel of cartService.getProducts()"
-        [buyedProduct] = "buyedProductModel"
+        [itemModel]="buyedProductModel"
+        (operation)="onQtyChanged($event)">ChangeQty
       >
       </app-buyed-product>
     </div>

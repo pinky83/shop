@@ -17,5 +17,16 @@
   <li>small refactoring changes</li>
   <li>some css styles (very poor, looks terrible)</li>
 </ul> 
+<h2>Homework - 2</h2>
+
+<ul>
+<li>splitting into the modules</li>
+<li>adding of products moved into product-list component</li>
+<li>used DOM event (click), decorators into the product-component </li>
+<li>implemented increase / decrease quantity / remove from cart in cart service</li>
+<li>add template variable in AppComponent with @ViewChild</li>
+<li>add styling for selected cart item with directives, @HostBinding and @HostListener (CartSelectionDirective)</li>
+<li>registered directive in shared module</li>
+</ul>
 
 

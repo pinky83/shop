@@ -2,6 +2,7 @@
   <h2>Product list</h2>
   <app-product
     *ngFor="let productModel of productService.getProducts()"
-    [product]="productModel">
+    [product]="productModel"
+   (purchase)="onBuy($event)">Buy!>
   </app-product>
 </div>
